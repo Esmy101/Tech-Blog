@@ -23,6 +23,10 @@ Posts.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    post_title: {
+      type: DataTypes.CHAR,
+      allowNull: false,
+    },
   },
   {
     hooks: {},

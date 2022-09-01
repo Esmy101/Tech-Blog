@@ -1,0 +1,86 @@
+:root {
+    --green:#8fbc8f;
+    --dark: #2f4f4f;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0px;
+}
+
+h3 {
+    color: var(--green);
+    background-color: var(--dark);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*main*/
+header{
+    color: var(--green);
+
+}
+
+#head {
+    background-color: var(--dark);
+}
+
+body {
+    background-color: var(--green);
+}
+
+.nav-link {
+    color:var(--green);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*dashboard*/
+
+#addpostB {
+    background-color: var(--dark);
+    color: var(--green);
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow:5px 5px black;
+    font-size:xx-large;
+    cursor: pointer;
+}
+
+/*addpost*/
+
+.note-textarea,
+.note-title {
+  color: #000000;
+  width: 100%;
+  outline: none;
+  border: 2px solid;
+  border-color: rgb(88, 176, 227);
+   resize: none;
+  height: calc(100% - 63px);
+  padding-top: 15px;
+}
+
+#box {
+    border: 5px solid;
+    border-color: var(--dark);
+}
+
+#postT,
+#postC {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--dark);
+}
+
+#createB {
+    
+    background-color:var(--dark);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--green);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#createB:hover {
+    background-color: #476f6f;
+}

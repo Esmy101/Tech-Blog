@@ -11,6 +11,7 @@ CREATE TABLE users(
 
 CREATE TABLE posts (
     post_context TEXT NOT NULL,
+    post_title VARCHAR(255) NOT NULL,
     post_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     userid INT,
     id INT PRIMARY KEY AUTO_INCREMENT,
