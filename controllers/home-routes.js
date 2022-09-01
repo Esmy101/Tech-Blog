@@ -17,10 +17,11 @@ router.get("/login", (req, res) => {
 });
 
 router.get("/dashboard", (req, res) => {
-  /*if (req.session.loggedIn) {
+  if (req.session.loggedIn) {
     res.render("dashboard");
-  }*/
-  res.render("dashboard");
+  } else {
+    res.render("login");
+  }
 });
 
 router.get("/addpost", (req, res) => {
