@@ -92,7 +92,14 @@ body {
     justify-content: space-between;
     background-color: var(--dark);
 }
-
+/*login & signup*/
 .hidden{
     display: none;
+}
+#otherB {
+    background-color:var(--green);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--dark);
+    border-radius: 5px;
+    cursor: pointer;
 }

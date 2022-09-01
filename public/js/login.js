@@ -39,10 +39,38 @@ const signupFormHandler = async (event) => {
   }
 };
 
-document
+const switchToSignup = async (event) => {
+  console.log("executing switchToSignup");
+
+  //add hidden class to login form
+  document.querySelector(".login-card").classList.add("hidden");
+  //remove hidden class from signup form
+  document.querySelector(".signup-card").classList.remove("hidden");
+};
+
+const switchToLogin = async (event) => {
+  console.log("executing switchToLogin");
+
+  //add hidden class to signup form
+  document.querySelector(".signup-card").classList.add("hidden");
+  //remove hidden class from login form
+  document.querySelector(".login-card").classList.remove("hidden");
+};
+
+document //login button
   .querySelector(".login-form")
   .addEventListener("submit", loginFormHandler);
 
-document
+document //signup button
   .querySelector(".signup-form")
   .addEventListener("submit", signupFormHandler);
+
+document //switch to signup-form button
+  .querySelector(".login-card")
+  .querySelector(".page-switch")
+  .addEventListener("click", switchToSignup);
+
+document //switch to login-form button
+  .querySelector(".signup-card")
+  .querySelector(".page-switch")
+  .addEventListener("click", switchToLogin);
