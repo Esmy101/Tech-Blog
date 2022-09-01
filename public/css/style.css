@@ -65,6 +65,7 @@ body {
 #box {
     border: 5px solid;
     border-color: var(--dark);
+    margin: 15px;
 }
 
 #postT,
@@ -85,5 +86,13 @@ body {
     background-color: #476f6f;
 }
 
-/*loging & logout*/
+/*post-details*/
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark);
+}
 
+.hidden{
+    display: none;
+}

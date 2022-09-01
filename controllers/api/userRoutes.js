@@ -6,11 +6,12 @@ router.post("/", async (req, res) => {
   try {
     const dbUserData = await User.create({
       username: req.body.username,
-      password: req.body.password,
+      user_password: req.body.password,
     });
 
     req.session.save(() => {
       req.session.loggedIn = true;
+      req.session.userid = dbUserData.id;
 
       res.status(200).json(dbUserData);
     });
@@ -45,8 +46,10 @@ router.post("/login", async (req, res) => {
       return;
     }
 
+    console.log(dbUserData.dataValues);
     req.session.save(() => {
       req.session.loggedIn = true;
+      req.session.userid = dbUserData.dataValues.id;
       console.log(
         "🚀 ~ file: user-routes.js ~ line 57 ~ req.session.save ~ req.session.cookie",
         req.session.cookie

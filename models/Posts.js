@@ -31,6 +31,8 @@ Posts.init(
   {
     hooks: {},
     sequelize,
+    createdAt: "post_date",
+    updatedAt: false,
     freezeTableName: true,
     underscored: true,
     modelName: "posts",
